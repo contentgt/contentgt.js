@@ -1,0 +1,28 @@
+{
+  "name": "contentgt.js",
+  "version": "0.0.1",
+  "description": "API client for AI Article Generation ContentGT",
+  "main": "src/contentgt.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/contentgt/contentgt.js.git"
+  },
+  "type": "module",
+  "exports": {
+    ".": "./src/contentgt.js"
+  },
+  "keywords": [
+    "contentgt",
+    "ai",
+    "ai articles"
+  ],
+  "author": "Kirill Shevchenko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/contentgt/contentgt.js/issues"
+  },
+  "homepage": "https://github.com/contentgt/contentgt.js#readme"
+}
