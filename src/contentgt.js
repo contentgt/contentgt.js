@@ -8,12 +8,13 @@ export class ContentGT {
 
   createArticle(options) {
     return new Promise((resolve, reject) => {
-      const { 
+      const {
         article_topic, 
         text_structure, 
         volume_selected, 
         language, 
-        include_images 
+        include_images,
+        include_youtube
       } = options;
 
       if (!article_topic) {
@@ -26,7 +27,8 @@ export class ContentGT {
         text_structure,
         volume_selected,
         language,
-        include_images
+        include_images,
+        include_youtube
       });
 
       const requestOptions = {
@@ -39,7 +41,7 @@ export class ContentGT {
           'Authorization': `Bearer ${this.apiKey}`,
           'Content-Length': data.length
         }
-      }; 
+      };
 
       const req = https.request(requestOptions, (res) => {
         let responseBody = '';
